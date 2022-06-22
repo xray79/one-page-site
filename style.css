@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+nav {
+  max-width: 120rem;
+  margin: 0 auto;
+  color: #dee2e6;
+  padding: 2rem 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+li:last-child {
+  margin-left: auto;
+}
+
+/* container */
+/* .header-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  position: relative;
+} */
+
+.text-container {
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 120rem;
+}
+
+.left-side {
+  width: 50%;
+}
+
+/* text box */
+.main-title {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.info-text {
+  margin-bottom: 2rem;
+}
+
+.cta {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: grey;
+  padding: 1.5rem 3rem;
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* background */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(./imgs/splash.jpg);
+  background-size: cover;
+}
+
+/* cta section */
+.section-cta {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(./imgs/section-cta.jpg);
+  background-size: cover;
+  padding: 10rem 0;
+  display: grid;
+  place-items: center;
+}
+
+.cta-text {
+  color: #dee2e6;
+  margin-bottom: 1.5rem;
+}
+
+.cta-container {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-heading {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+/* Information section */
+.section-information {
+  padding-top: 9.6rem;
+  height: 100vh;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
