@@ -26,6 +26,7 @@ nav {
   margin: 0 auto;
   color: #dee2e6;
   padding: 2rem 0;
+  font-weight: 700;
 }
 
 ul {
@@ -117,18 +118,44 @@ header {
   color: white;
   font-size: 3.2rem;
   font-weight: 700;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.cta-text {
+  margin-bottom: 2.5rem;
+}
+
+.cta-text-field {
+  height: 3rem;
+  width: 20rem;
+}
+
+.cta-button {
+  color: #dee2e6;
+  background-color: grey;
+  border: none;
+  height: 3rem;
+  padding: 0 1.5rem;
+  font-weight: 700;
+  border-radius: 3px;
 }
 
 /* Information section */
 .section-information {
-  padding-top: 9.6rem;
-  height: 100vh;
+  padding: 9.6rem 0;
 }
 
-.container {
+.info-container {
   max-width: 120rem;
   margin: 0 auto;
+}
+
+.info-heading {
+  margin-bottom: 1rem;
+}
+
+.info-sub-heading-2 {
+  margin-bottom: 4.8rem;
 }
 
 .grid {
@@ -137,5 +164,26 @@ header {
 
 .grid--2-cols {
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 8rem;
+}
+
+.grid--center {
+  display: grid;
+  place-items: center;
+}
+
+.info-card {
+  padding: 3rem;
+}
+
+.info-card h3 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.info-img {
+  height: 40rem;
+  width: 40rem;
+  object-fit: cover;
+  border-radius: 6px;
 }
