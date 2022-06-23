@@ -172,12 +172,25 @@ header {
   place-items: center;
 }
 
+.card:hover {
+  transition: all ease 0.3s;
+  transform: scale(1.025);
+}
+
 .info-card {
   padding: 3rem;
+  border-radius: 6px;
+  box-shadow: 19px 18px 43px 12px rgba(0, 0, 0, 0.23);
+  height: 40rem;
+  width: 40rem;
 }
 
 .info-card h3 {
   font-size: 3.2rem;
+  margin-bottom: 6rem;
+}
+
+.info-card p {
   margin-bottom: 2rem;
 }
 
@@ -186,4 +199,5 @@ header {
   width: 40rem;
   object-fit: cover;
   border-radius: 6px;
+  box-shadow: 19px 18px 43px 12px rgba(0, 0, 0, 0.23);
 }
