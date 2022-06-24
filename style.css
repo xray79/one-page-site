@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   position: relative;
 }
@@ -25,7 +25,7 @@ nav {
   max-width: 120rem;
   margin: 0 auto;
   color: #dee2e6;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   font-weight: 700;
 }
 
@@ -41,19 +41,19 @@ li:last-child {
   margin-left: auto;
 }
 
-/* container */
-/* .header-container {
+.header-container {
   max-width: 120rem;
   margin: 0 auto;
   position: relative;
-} */
+  height: 100vh;
+}
 
 .text-container {
   margin: 0 auto;
   position: absolute;
-  top: 40%;
-  left: 10%;
-  width: 120rem;
+  top: 25%;
+  left: 5%;
+  max-width: 120rem;
 }
 
 .left-side {
@@ -141,6 +141,7 @@ header {
 }
 
 /* Information section */
+
 .section-information {
   padding: 9.6rem 0;
 }
@@ -150,12 +151,17 @@ header {
   margin: 0 auto;
 }
 
+.heading-container {
+  padding: 0 2rem;
+}
+
 .info-heading {
+  font-size: 4.8rem;
   margin-bottom: 1rem;
 }
 
 .info-sub-heading-2 {
-  margin-bottom: 4.8rem;
+  margin-bottom: 7.2rem;
 }
 
 .grid {
@@ -200,4 +206,51 @@ header {
   object-fit: cover;
   border-radius: 6px;
   box-shadow: 19px 18px 43px 12px rgba(0, 0, 0, 0.23);
+}
+
+/* Section testimonial */
+
+.section-testimonial {
+  height: 100vh;
+  background-color: #e9e1dc;
+  padding: 9.6rem 0;
+}
+
+.testimonial-subheading {
+  margin-bottom: 11.2rem;
+}
+
+.carousel {
+  width: 80rem;
+  background-color: red;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  padding-left: 8.6rem;
+}
+
+.carousel-img {
+  height: 200px;
+  border-radius: 5px;
+  transform: scale(1.5);
+}
+
+.testimonial-text {
+  margin-bottom: 3.5rem;
+}
+
+.testimonial-author {
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+/* Media queries and responsive design */
+
+/* 87em = 1392px */
+@media (max-width: 87em) {
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
 }
