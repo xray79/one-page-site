@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+/* 
+
+Colours
+#BDA99D
+#21251C
+#995B32
+#713B1B
+
+*/
+
 html {
   font-size: 62.5%;
   font-family: sans-serif;
@@ -24,9 +34,7 @@ header {
 nav {
   max-width: 120rem;
   margin: 0 auto;
-  color: #dee2e6;
   padding: 2rem 2rem;
-  font-weight: 700;
 }
 
 ul {
@@ -35,6 +43,12 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: #dee2e6;
+  font-weight: 700;
 }
 
 li:last-child {
@@ -88,15 +102,16 @@ li:last-child {
 
 /* background */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url(./imgs/splash.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./imgs/splash.webp);
   background-size: cover;
+  overflow: hidden;
 }
 
 /* cta section */
 .section-cta {
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(./imgs/section-cta.jpg);
+    url(./imgs/section-cta.webp);
   background-size: cover;
   padding: 10rem 0;
   display: grid;
@@ -217,24 +232,27 @@ header {
 }
 
 .testimonial-subheading {
-  margin-bottom: 11.2rem;
+  margin-bottom: 15rem;
 }
 
-.carousel {
+.carousel__card {
   width: 80rem;
-  background-color: red;
+  background-color: #bda99d;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.23);
   margin: 0 auto;
   border-radius: 5px;
   display: flex;
   align-items: center;
   gap: 7rem;
   padding-left: 8.6rem;
+  position: relative;
 }
 
-.carousel-img {
+.carousel__img {
   height: 200px;
   border-radius: 5px;
   transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.23);
 }
 
 .testimonial-text {
@@ -244,6 +262,41 @@ header {
 .testimonial-author {
   text-transform: capitalize;
   font-style: italic;
+}
+
+/* Section testimonial -- carousel buttons */
+
+.carousel__btn {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.23);
+}
+
+.btn-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.btn--left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn--right {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.carousel__card--2 {
+  color: white;
+  display: none;
 }
 
 /* Media queries and responsive design */
